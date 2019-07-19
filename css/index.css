@@ -188,6 +188,11 @@ nav {
     margin-right: 10%;
   }
 }
+nav a:hover {
+  background: #454A59;
+  color: white;
+  border-radius: 5px;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -280,6 +285,27 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text a:hover {
+  background: white;
+  color: black;
+  border: 1px solid #81848E;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+@keyframes fade {
+  from {
+    background-color: #22283A;
+  }
+  to {
+    background-color: white;
+  }
+  from {
+    color: white;
+  }
+  to {
+    color: black;
+  }
 }
 .home .walk .walk-text .btn {
   display: flex;

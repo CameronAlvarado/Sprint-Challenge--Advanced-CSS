@@ -68,6 +68,21 @@
         margin-bottom: 26px;
       }
 
+      a:hover {
+        background: white;
+        color: black;
+        border: 1px solid @waterloo;
+        animation-name: fade;
+        animation-duration: 1s;
+      }
+      
+      @keyframes fade {
+        from {background-color: @btn-bg-color;}
+        to {background-color: white;}
+        from {color: white;}
+        to {color: black;}
+      }
+
       .btn {
         .custom-button(@header-font-color, 100px, @porcelain);
         .mobileView();

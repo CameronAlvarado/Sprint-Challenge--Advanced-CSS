@@ -1,1 +1,65 @@
 // Mixins Here
+
+.flexCenter() {
+    display: flex;
+    justify-content: center;
+}
+
+// ---------------- Button ----------------------
+
+.custom-button(@bg-color, @width, @font-color){
+    .flexCenter();
+    align-items: center;
+    background-color: @bg-color;
+    cursor: pointer;
+    width: @width;
+    height: 35px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: 5px;
+    color:@font-color;
+}
+// -----------------------------------------------
+
+.mobileView() {
+    @media screen and @phone {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: unset;
+        padding: unset;
+    }
+}
+.mobileView2() {
+    @media screen and @phone {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: unset;
+        padding: unset;
+    }
+}
+.mobileView3() {
+    @media screen and @phone {
+            display: none;
+    }
+}
+
+.mobileViewImg() {
+    @media screen and @phone {
+        width: 100%;
+        margin: unset;
+        padding: 20px;
+        border-radius: 40px;
+    }
+}
+
+.mobileView4() {
+    @media screen and @phone {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: unset;
+        padding: 20px;
+    }
+}

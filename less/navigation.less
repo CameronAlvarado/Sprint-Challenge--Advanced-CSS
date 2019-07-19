@@ -1,1 +1,25 @@
 // Navigation code here
+
+h1 {
+    .flexCenter();
+    margin-top: 1%;
+}
+
+nav {
+    .flexCenter();
+    font-size: 1.6rem;
+    line-height: 1.4;
+    justify-content: space-between;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 1rem;
+    @media screen and (max-width: 800px) {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    a:hover {
+        background: @river-bend;
+        color: white;
+        border-radius: 5px;
+      }
+}

@@ -159,7 +159,7 @@ p {
   line-height: 1.4;
 }
 a {
-  color: black;
+  color: #23293B;
   text-decoration: none;
 }
 .container {
@@ -233,6 +233,19 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #23293B;
+  cursor: pointer;
+  width: 100px;
+  height: 35px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #F6F7F8;
 }
 .home .walk .walk-img {
   width: 46%;

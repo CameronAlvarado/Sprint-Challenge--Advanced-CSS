@@ -8,13 +8,15 @@
 // ---------------- Button ----------------------
 
 .custom-button(@bg-color, @width, @font-color){
-    display: block;
+    .flexCenter();
+    align-items: center;
     background-color: @bg-color;
-    margin: 0 10px 20px;
     cursor: pointer;
     width: @width;
-    height: 45px;
-    font-size: 2rem;
-    border-radius: 10px;
+    height: 35px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: 5px;
     color:@font-color;
+
 }
